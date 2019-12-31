@@ -12,8 +12,11 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 public class GameView extends View {
-    float posX;
+    float posX=400;
     float posY;
+    private float iconWidth;
+    private float iconHeight;
+
     public GameView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
@@ -37,7 +40,7 @@ public class GameView extends View {
     }
 
     public void setPosX(float posX) {
-        if (posX>0&&posX<1200)
+        if (posX>0&&posX<1100)
         this.posX = posX;
     }
 
